@@ -77,7 +77,7 @@ function printQuestions() {
             },
 
         ]).then(function (response) {
-            console.log(response)
+            // console.log(response)
             var id = response.idPromp;
             var quantity = response.quantityPromp;
             // based on their answer, either call the bid or the post functions
@@ -91,7 +91,7 @@ function checkQuantity(id, quantity) {
         // err = true
         if (err) {
             throw err;
-            console.log(result)
+            // console.log(result)
         }
         else {
             // console.log(result[0].stock_quantity);
@@ -104,8 +104,8 @@ function checkQuantity(id, quantity) {
                         console.log(err);
                     }
                     else {
-                        console.log("Item price: " + itemPrice)
-                        console.log("Your total cost was " + itemPrice * quantity)
+                        console.log("Item price: $" + itemPrice)
+                        console.log("Your total cost was $" + itemPrice * quantity)
                     }
                 })
             } else {
